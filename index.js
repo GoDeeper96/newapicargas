@@ -8,8 +8,8 @@ async function main() {
     try {
       await connectDb();
      
-      app.listen(6000,()=>{
-        console.log("LISTENNING ON PORT 6000")
+      app.listen(4001,()=>{
+        console.log("LISTENNING ON PORT 4001")
         
     })
     } catch (error) {
