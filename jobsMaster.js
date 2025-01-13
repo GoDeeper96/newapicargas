@@ -6,6 +6,9 @@ import moment from "moment/moment";
 import { updateMastersInRedis } from "./jobs";
 import { cargaQueue } from "./bullConfig";
 
+export const cargaQueue = new Queue('cargaQueue', {
+  redis: { host: '127.0.0.1', port: 6379 },
+});
 
 //ADMASTER2
   cargaQueue.process(async (job) => {
